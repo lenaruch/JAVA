@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-03T07:06:36.926699600Z</date>
+  <millis>1688367996926</millis>
+  <nanos>699600</nanos>
+  <sequence>0</sequence>
+  <level>INFO</level>
+  <class>HomeWork_2.HW1_1</class>
+  <method>writeToFile</method>
+  <thread>1</thread>
+  <message>Запсиь успешно завершена</message>
+</record>
+</log>

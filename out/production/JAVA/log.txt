@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-02T19:10:29.319458Z</date>
+  <millis>1688325029319</millis>
+  <nanos>458000</nanos>
+  <sequence>0</sequence>
+  <level>INFO</level>
+  <class>Lesson_2.L2_Task_3</class>
+  <method>writeToFile</method>
+  <thread>1</thread>
+  <message>Запсиь успешно завершена</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-02T23:24:55.113905Z</date>
+  <millis>1688340295113</millis>
+  <nanos>905000</nanos>
+  <sequence>0</sequence>
+  <level>INFO</level>
+  <class>HomeWork_2.HW1_1</class>
+  <method>writeToFile</method>
+  <thread>1</thread>
+  <message>Запсиь успешно завершена</message>
+</record>
+</log>
