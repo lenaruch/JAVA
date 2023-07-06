@@ -20,8 +20,10 @@ public class HW3_1 {
 
        List<Integer> list2 = new ArrayList<>();
 
+       // Используем любой понравившийся метод {removeOven1}, {removeOven2} или {removeOven3}
         removeOven3(list);
 
+        // Выводим список нечетных чисел из массива
         System.out.println(list);
     }
 

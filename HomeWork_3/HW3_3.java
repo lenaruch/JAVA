@@ -20,8 +20,6 @@ public class HW3_3 {
         planets.add("Нептун");
         planets.add("Плутон");
 
-        System.out.println(planets);
-
         List<String> randPlanets = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             int x = RandomGenerator.getDefault().nextInt(0,8);
@@ -30,8 +28,10 @@ public class HW3_3 {
 
         System.out.println(randPlanets);
         for (int i = 0; i < planets.size(); i++) {
-            System.out.println(Collections.frequency(randPlanets, planets.get(i)));
+            int count = Collections.frequency(randPlanets, planets.get(i));
+            if (count != 0){
+                System.out.printf("Планета %s встречается %d раз\n", planets.get(i), count);
+            }
         }
-
     }
 }
