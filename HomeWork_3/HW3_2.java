@@ -1,5 +1,6 @@
 package HomeWork_3;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -19,14 +20,21 @@ public class HW3_2 {
         }
         // Выводим сгенерированный список
         System.out.println(list);
-        System.out.println(Collections.max(list));
-        System.out.println(Collections.min(list));
 
+        // Выводим максимальное значение
+        System.out.printf("Максимальное значение = %d\n", Collections.max(list));
+
+        // Выводим минимальное значение
+        System.out.printf("Минимальное значение = %d\n", Collections.min(list));
+
+        // Через цикл находим сумму всех элементов
         double sum = 0;
         for (int i = 0; i < list.size(); i++) {
             sum = sum + list.get(i);
         }
-        double mid = sum/list.size();
-        System.out.println(mid);
+
+        // Выводим через Ф строку среднее значение (double mid = sum/list.size();)
+        // как округлить???
+        System.out.printf("Среднее значение = %f\n", sum/list.size());
     }
 }
