@@ -15,7 +15,7 @@ public class HW3_2 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(); // создаем список
         // Заполняем список 15 рандомными числами от 0 до 10
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 15; i++) {
             list.add(RandomGenerator.getDefault().nextInt(0,10));
         }
         // Выводим сгенерированный список
@@ -35,6 +35,15 @@ public class HW3_2 {
 
         // Выводим через Ф строку среднее значение (double mid = sum/list.size();)
         // как округлить???
-        System.out.printf("Среднее значение = %f\n", sum/list.size());
+        double mid = sum/list.size();
+
+        // Следующая строка выводит среднее значение без округления в виде х,хххххх
+        // System.out.printf("Среднее значение = %f\n", sum/list.size());
+
+        // Для красивого вывода нужно перевести тип дабл в строку следующим образом
+        // String.format("%.2f", mid); // где 2 - количестов значений после запятой
+
+        // Выводим все в одну строку значение среднего значения
+        System.out.printf("Среднее значение = %s\n", String.format("%.2f", mid));
     }
 }
