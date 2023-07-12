@@ -31,15 +31,15 @@ public class HW6_1 {
     public static void main(String[] args) {
         Set<NoteBook> set = new HashSet<>();
 
-        NoteBook noteBook_1 = new NoteBook("Samsung", "i7 8700k", 8,256, "Windows 10", "black");
-        NoteBook noteBook_2 = new NoteBook("Xiaomi", "i9 9900kf", 4,120, "DOS", "white");
-        NoteBook noteBook_3 = new NoteBook("Apple", "i7 4790k", 32,512, "Ubuntu", "silver");
-        NoteBook noteBook_4 = new NoteBook("Huawei", "i5 10400f", 16, 1024, "Windows XP", "red");
-        NoteBook noteBook_5 = new NoteBook("Acer", "i3 1100", 16,256, "Windows 7", "silver");
-        NoteBook noteBook_6 = new NoteBook("Acer", "AMD Ryzen 5600G", 4,512, "CentOS", "orange");
-        NoteBook noteBook_7 = new NoteBook("Apple", "AMD Ryzen 2200U", 8,1024, "Windows", "purple");
-        NoteBook noteBook_8 = new NoteBook("Dexp", "Baikal", 64,2048, "Linux", "gray");
-        NoteBook noteBook_9 = new NoteBook("Lenovo", "Эльбрус", 128,2048, "DOS", "invisible");
+        NoteBook noteBook_1 = new NoteBook("Samsung", "Si7-8-256","i7 8700k", 8,256, "Windows 10", "black");
+        NoteBook noteBook_2 = new NoteBook("Xiaomi", "Xi9-4-120", "i9 9900kf", 4,120, "DOS", "white");
+        NoteBook noteBook_3 = new NoteBook("Apple", "Ai7-32-512", "i7 4790k", 32,512, "Ubuntu", "silver");
+        NoteBook noteBook_4 = new NoteBook("Huawei", "Hi5-16-1024", "i5 10400f", 16, 1024, "Windows XP", "red");
+        NoteBook noteBook_5 = new NoteBook("Acer", "Ai3-16-256", "i3 1100", 16,256, "Windows 7", "silver");
+        NoteBook noteBook_6 = new NoteBook("Acer", "Ar56-4-512", "AMD Ryzen 5600G", 4,512, "CentOS", "orange");
+        NoteBook noteBook_7 = new NoteBook("Apple", "Ar22-8-1024", "AMD Ryzen 2200U", 8,1024, "Windows", "purple");
+        NoteBook noteBook_8 = new NoteBook("Dexp", "", "Baikal", 64,2048, "Linux", "gray");
+        NoteBook noteBook_9 = new NoteBook("Lenovo", "", "Эльбрус", 128,2048, "DOS", "invisible");
 
         set.add(noteBook_1);
         set.add(noteBook_2);
@@ -50,6 +50,8 @@ public class HW6_1 {
         set.add(noteBook_7);
         set.add(noteBook_8);
         set.add(noteBook_9);
+
+        System.out.println(noteBook_1.toString());
 
 
     }
