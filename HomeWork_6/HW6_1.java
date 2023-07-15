@@ -59,7 +59,9 @@ public class HW6_1 {
         String ssd = scanner.nextLine();
         map_prop.put(2, ssd);
 
-        System.out.println(noteBook_1.getInfo());
+
+        noteBooks.forEach(noteBook -> System.out.println(noteBook.matchRam(32)));
+
     }
 }
 

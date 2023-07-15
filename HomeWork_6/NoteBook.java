@@ -1,5 +1,8 @@
 package HomeWork_6;
 
+import java.util.Map;
+import java.util.Set;
+
 public class NoteBook {
     String manufacturer;
     String cpuVendor;
@@ -22,35 +25,36 @@ public class NoteBook {
 
     public String getInfo() {
         String res = String.format("Прозводитель: %s\nCPU: %s %s\nRAM: %d\nSSD: %d",
-                manufacturer, cpuVendor, cpu_model,ram, memory);
+                manufacturer, cpuVendor, cpu_model, ram, memory);
         return res;
     }
 
-    public String getManufacturer(){
+    public String getManufacturer() {
         return manufacturer;
     }
 
-    public String getCpuVendor(){
+    public String getCpuVendor() {
         return cpuVendor;
     }
 
-    public String getCpu_model(){
+    public String getCpu_model() {
         return cpu_model;
     }
 
-    public int getRam(){
+    public int getRam() {
         return ram;
     }
 
-    public int getMemory(){
+    public int getMemory() {
         return memory;
     }
 
-    public String getOs(){
+    public String getOs() {
         return os;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
+
 }
