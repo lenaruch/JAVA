@@ -1,5 +1,6 @@
 package HomeWork_6;
 
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -24,7 +25,7 @@ public class NoteBook {
 
 
     public String getInfo() {
-        String res = String.format("Прозводитель: %s\nCPU: %s %s\nRAM: %d\nSSD: %d",
+        String res = String.format("Прозводитель: %s, CPU: %s %s, RAM: %d, SSD: %d",
                 manufacturer, cpuVendor, cpu_model, ram, memory);
         return res;
     }

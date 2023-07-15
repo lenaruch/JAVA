@@ -1,6 +1,5 @@
 package HomeWork_6;
 
-import java.security.Key;
 import java.util.*;
 
 /*
@@ -28,7 +27,7 @@ import java.util.*;
     то программа начинает работать некорректно
  */
 public class HW6_1 {
-    public static void main(String[] args) {
+    public static <noteBooks> void main(String[] args) {
         Set<NoteBook> noteBooks = new HashSet<>();
 
         NoteBook noteBook_1 = new NoteBook("MSI","Intel","i3", 64,256, "Windows", "black");
@@ -46,21 +45,46 @@ public class HW6_1 {
         NoteBook noteBook_7 = new NoteBook("MSI","Intel","i7", 16,1024, "Windows", "white");
         noteBooks.add(noteBook_7);
 
+        Scanner scanner = new Scanner(System.in);
+
+
         Map<Integer, String> map_prop = new HashMap<>();
-        map_prop.put(1, null); // RAM
-        map_prop.put(2, null); // MEMORY
+        map_prop.put(1, "99999"); // RAM
+        map_prop.put(2, "99999"); // MEMORY
 
         System.out.println("Введите минимальное значение ОЗУ:");
-        Scanner scanner = new Scanner(System.in);
         String ram = scanner.nextLine();
-        map_prop.put(1, ram);
+        if (ram.length() == 0){
+            map_prop.put(1,"0");
+        } else {
+            map_prop.put(1, ram);
+        }
+
 
         System.out.println("Введите минимальный объем накопителя:");
         String ssd = scanner.nextLine();
-        map_prop.put(2, ssd);
+        if (ssd.length() == 0){
+            map_prop.put(2,"0");
+        } else{
+            map_prop.put(2, ssd);
+        }
 
 
-        noteBooks.forEach(noteBook -> System.out.println(noteBook.matchRam(32)));
+        StringBuilder info = new StringBuilder();
+        for (Map.Entry<Integer, String> entry : map_prop.entrySet()) {
+            for (NoteBook notebook: noteBooks) {
+                int ram1 = notebook.getRam();
+                int ssd1 = notebook.getMemory();
+                int ram2 = Integer.parseInt(map_prop.get(1));
+                int ssd2 = Integer.parseInt(map_prop.get(2));
+                if (ram1 >= ram2 & ssd1 >= ssd2){
+                    info.append(notebook.getInfo());
+                    info.append("\n");
+                }
+            }
+        }
+        System.out.println(info);
+
 
     }
 }
